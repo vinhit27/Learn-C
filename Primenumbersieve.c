@@ -28,7 +28,7 @@ void sieve()
     }
 }
 
-int snt(int n)
+float snt(int n)
 {
     int cnt = 1;
     for (int i = 2; i <= sqrt(n); i++)
