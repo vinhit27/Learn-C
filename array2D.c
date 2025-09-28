@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-
-//Form Nhap so hang so cot roi printf.
+// Form Nhap so hang so cot roi printf.
 void form()
 {
     int n, m;
@@ -26,21 +25,21 @@ void form()
     }
 }
 
-
-
-//khoi tao 1 array 2D cho san
-void form1(){
-    long long a[3][3]={{1,2,3},{4,5,6},{7,8,9}};
-    for (int i=0; i<3; i++){
-        for (int j=0; j<3; j++){
+// khoi tao 1 array 2D cho san
+void form1()
+{
+    long long a[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+    for (int i = 0; i < 3; i++)
+    {
+        for (int j = 0; j < 3; j++)
+        {
             printf("%lld ", a[i][j]);
-        }   
+        }
         printf("\n");
     }
 }
 
-
-
-int main(){
+int main()
+{
     form1();
 }

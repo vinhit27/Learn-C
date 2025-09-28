@@ -1,11 +1,9 @@
 #include <stdio.h>
 #include <math.h>
 
-
-
-
-//nhap so luong phan tu cua array
-int main(){
+// nhap so luong phan tu cua array
+int main()
+{
     // dataType ArrayName[sizeOfArray];
     // a[index]
 
@@ -16,12 +14,14 @@ int main(){
     int a[n]; // Khai báo mảng có n phần tử (
 
     // Nhập giá trị cho mảng
-    for(int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++)
+    {
         scanf("%d", &a[i]);
     }
 
     // In ra giá trị của mảng
-    for(int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++)
+    {
         printf("%d ", a[i]);
     }
 

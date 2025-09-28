@@ -1,6 +1,7 @@
 #include <stdio.h> // Bao gồm thư viện chuẩn để dùng hàm nhập xuất
 
-int main() {
+int main()
+{
     // Khai báo mảng và các biến cần thiết
     int arr[100]; // Mảng có thể chứa tối đa 100 phần tử
     int n, i;
@@ -12,7 +13,8 @@ int main() {
 
     printf("Nhap cac phan tu cua mang:\n");
     // Nhập các phần tử của mảng
-    for (i = 0; i < n; i++) {
+    for (i = 0; i < n; i++)
+    {
         printf("Phan tu arr[%d]: ", i);
         scanf("%d", &arr[i]); // Đọc từng phần tử từ bàn phím
     }
@@ -22,13 +24,16 @@ int main() {
     min = arr[0];
 
     // Duyệt qua mảng từ phần tử thứ hai để tìm giá trị lớn nhất và nhỏ nhất
-    for (i = 1; i < n; i++) {
+    for (i = 1; i < n; i++)
+    {
         // Nếu phần tử hiện tại lớn hơn max, cập nhật max
-        if (arr[i] > max) {
+        if (arr[i] > max)
+        {
             max = arr[i];
         }
         // Nếu phần tử hiện tại nhỏ hơn min, cập nhật min
-        if (arr[i] < min) {
+        if (arr[i] < min)
+        {
             min = arr[i];
         }
     }

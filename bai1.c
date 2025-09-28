@@ -71,9 +71,6 @@ void bai4()
     printf("%d le", dem2);
 }
 
-
-
-
 void bai5()
 {
     int a[7];

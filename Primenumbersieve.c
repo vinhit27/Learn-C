@@ -38,13 +38,15 @@ float snt(int n)
     }
     return n > 1;
 }
-int main(){
+int main()
+{
     sieve();
     int n;
     scanf("%d", &n);
 
-    for (int i=2; i<=n; i++){
-        if (prime[i]) 
-            printf("%d ", i); // in ra 
+    for (int i = 2; i <= n; i++)
+    {
+        if (prime[i])
+            printf("%d ", i); // in ra
     }
 }
