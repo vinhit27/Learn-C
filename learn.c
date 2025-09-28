@@ -35,5 +35,3 @@ int main(){
 }
 /* result:  XIn chao !
             Hello !   */
-
-
