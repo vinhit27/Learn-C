@@ -3,13 +3,13 @@
 
 int sum(int n)
 {
-    int ans = 0;
+    int result = 0;
     while (n)
     {
-        ans += n % 10; // lấy chữ số cuối cùng cộng dồn
-        n /= 10;       // bỏ chữ số cuối
+        result += n % 10; 
+        n /= 10;       
     }
-    return ans;
+    return result;
 }
 
 int smith(int n)
