@@ -22,9 +22,9 @@ int find(int n)
 
 int main()
 {
-    int t;
-    scanf("%d", &t); // testCaseNumber
-    for (int i = 1; i <= t; i++)
+    int testCaseNumber;
+    scanf("%d", &testCaseNumber); 
+    for (int i = 1; i <= testCaseNumber; i++)
     {
         int n;
         scanf("%d", &n);
