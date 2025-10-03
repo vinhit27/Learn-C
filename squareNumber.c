@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-int sodep(int n)
+int niceNumber(int n)
 {
     for (int i = 2; i <= sqrt(n); i++)
     {
@@ -17,7 +17,7 @@ int sodep(int n)
     return 0;
 }
 
-int sodep2(int n)
+int niceNumber2(int n)
 {
     int ok = 0; // check
     for (int i = 2; i <= sqrt(n); i++)
@@ -43,7 +43,7 @@ int main()
 
     for (int i = a; i <= b; i++)
     {
-        if (sodep2(i))
+        if (niceNumber2(i))
             printf("%d ", i);
     }
 }

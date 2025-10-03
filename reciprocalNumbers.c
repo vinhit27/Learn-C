@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-int tn(long long n) {
+int reciprocalNumbers(long long n) {
     long long rev = 0, m = n;
     while (n != 0) {
         rev = rev * 10 + n % 10;   // đảo ngược số

@@ -2,7 +2,7 @@
 #include <string.h>
 #include <math.h>
 
-int cp(long long n)
+int squareNumber(long long n)
 {
     long long can = sqrt(n) + 0.5; // làm tròn để tránh sai số
     if (1LL * can * can == n)      // nếu bình phương bằng chính nó
