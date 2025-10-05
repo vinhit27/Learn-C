@@ -3,7 +3,7 @@
 #include <string.h>
 
 // Hàm kiểm tra số đối xứng (palindrome)
-int tn(int n)
+int reversible(int n)
 {
     int rev = 0, tmp = n;
     while (n)
@@ -17,7 +17,7 @@ int tn(int n)
 // Hàm kiểm tra xem có chứa số 6 và tổng chữ số chia hết cho 8
 int check(int n)
 {
-    int ok = 0;
+    int condition = 0;
     int sum = 0;
 
     while (n)
@@ -25,12 +25,12 @@ int check(int n)
         int r = n % 10;
         sum += r;
         if (r == 6)
-            ok = 1;
+            condition = 1;
         n /= 10;
     }
 
     // điều kiện: có chữ số 6 và tổng chia hết cho 8
-    if (ok && sum % 8 == 0)
+    if (condition && sum % 8 == 0)
         return 1;
     return 0;
 }
@@ -43,7 +43,7 @@ int main()
     int ok = 0;
     for (int i = a; i <= b; i++)
     {
-        if (check(i) && tn(i))
+        if (check(i) && reversible(i))
         {
             printf("%d ", i);
             ok = 1;

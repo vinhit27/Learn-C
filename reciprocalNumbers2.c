@@ -2,7 +2,7 @@
 #include <string.h>
 #include <math.h>
 
-int tn(int n)
+int reversible(int n)
 {
     int rev = 0, tmp = n;
     while (n)
@@ -13,7 +13,7 @@ int tn(int n)
     return rev == tmp;
 }
 
-int chua9(int n)
+int containTheNumber9(int n)
 {
     while (n != 0)
     {
@@ -31,7 +31,7 @@ int main()
     int cnt = 0;
     for (int i = 2; i <= n; i++)
     {
-        if (chua9(i) && tn(i))
+        if (containTheNumber9(i) && reversible(i))
         {
             printf("%d ", i);
             ++cnt;

@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-int tn(int n) {
+int reversible(int n) {
     int rev = 0, tmp = n;
     while (n) {
         rev = rev * 10 + n % 10;
@@ -11,29 +11,29 @@ int tn(int n) {
 }
 
 int check(int n) {
-    int cnt = 0;
+    int count = 0;
     for (int i = 1; i <= sqrt(n); i++) {
         if (n % i == 0) {
-            cnt++;
-            if (i != n / i) cnt++;
+            count++;
+            if (i != n / i) count++;
         }
     }
-    return cnt == 3;
+    return count== 3;
 }
 
 int main() {
     int a, b;
     scanf("%d%d", &a, &b);
-    int ok = 0; // kiểm tra xem có số đẹp nào không
+    int isPerfectNumber = 0; // kiểm tra xem có số đẹp nào không
 
     for (int i = a; i <= b; i++) {
         if (check(i) && tn(i)) {
             printf("%d ", i);
-            ok = 1;
+            isPerfectNumber = 1;
         }
     }
 
-    if (!ok)
+    if (!isPerfectNumber)
         printf("-1");
 
     return 0;

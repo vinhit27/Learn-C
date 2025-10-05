@@ -21,16 +21,16 @@ int strongNumber(int n) {
 int main() {
     int a, b;
     scanf("%d%d", &a, &b);
-    int ok = 0; // kiểm tra xem có số strong nào không
+    int isStrong = 0; // kiểm tra xem có số strong nào không
 
     for (int i = a; i <= b; i++) {
         if (strongNumber(i)) {
             printf("%d ", i);
-            ok = 1;
+            isStrong = 1;
         }
     }
 
-    if (!ok)
+    if (!isStrong)
         printf("0");
 
     return 0;

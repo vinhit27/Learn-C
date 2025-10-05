@@ -2,28 +2,36 @@
 #include <string.h>
 #include <math.h>
 
-int solve(int n, int k){
+int solve(int n, int k)
+{
     int cnt = 0;
-    for(int i=2; i<=sqrt(n); i++){
-        if(n%i==0){
-            while(n%i==0){
-                n/=i;
+    for (int i = 2; i <= sqrt(n); i++)
+    {
+        if (n % i == 0)
+        {
+            while (n % i == 0)
+            {
+                n /= i;
                 ++cnt;
-                if(cnt==k) return i;
+                if (cnt == k)
+                    return i;
             }
         }
     }
-    if(n!=1){
+    if (n != 1)
+    {
         ++cnt;
-        if(cnt==k) return n;
+        if (cnt == k)
+            return n;
         return -1;
     }
     return -1;
 }
 
-int main(){
+int main()
+{
     int n, k;
     scanf("%d%d", &n, &k);
-    printf("%d\n", solve(n,k));
+    printf("%d\n", solve(n, k));
     return 0;
 }
